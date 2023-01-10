@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
   //remove slashes through regEX
   let path = parsedURL.path.replace(/^\/+|\/+$/g, ""); //the path of the request.
   if (path == "") { //if the path is empty like ip:port/ 
-    path = index.html; //go to the index.html
+    path = "/index.html"; //go to the index.html
   }
   console.log(`Requested path: ${path} `); 
   let file = __dirname + "/public/" + path;
