@@ -1,0 +1,60 @@
+body {
+    background-image:url(img/thrimg.jpg);
+}
+#container{
+    background-color: rgb(0, 0, 255, 0.4);
+    max-width: 500px;
+    height: 200px;
+    display: grid;
+    align-items: center;
+    padding: 250px 0;
+    margin: auto;
+    margin-top: 5%;
+}
+#btns {
+    display: inline-flex;
+    gap: 100px;
+
+}
+#signup, #signin {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+
+}
+li {
+    border: 3px solid white;
+    text-align: center;
+    width: 150px;
+    height: 85px;
+    padding: 5px;
+}
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;    
+    font-size: 30px;
+    color: white;
+}
+li:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+li:hover a {
+    color: black;
+}
+@media only screen and (max-width: 500px) {
+    #container {
+        margin-top: 15%;
+    }
+    #btns {
+        display: block;
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+    li {
+        margin-top: 15px;
+        
+    }
+}
